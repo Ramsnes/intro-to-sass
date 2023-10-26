@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/examples.css" rel="stylesheet" />
+    <title>Intro bootstrap</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <ul class="nav justify-content-center" style="font-size: 1.8rem">
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="index.html"
+              style="text-decoration: none; color: black"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link disabled"
+              aria-current="page"
+              href="#"
+              style="text-decoration: none; color: black"
+              >Examples</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- fixed-width container that is centered on the page  -->
+      <div class="container">
+        <p>
+          Your content stays in the middle of the page with equal padding left
+          and right.
+        </p>
+      </div>
+      <!-- creates a full-width container that spans the entire width of the viewport -->
+      <div class="container-fluid">
+        <p>Your content spans the entire width</p>
+      </div>
+
+      <!-- stays 100% width until breakpoint width is reached -->
+      <div class="container-sm">100% wide until small breakpoint</div>
+      <div class="container-md">100% wide until medium breakpoint</div>
+      <div class="container-lg">100% wide until large breakpoint</div>
+      <div class="container-xl">100% wide until extra large breakpoint</div>
+      <div class="container-xxl">
+        100% wide until extra extra large breakpoint
+      </div>
+      <div class="container">
+        <!-- creates at row with 12 columns  -->
+        <div class="row">
+          <!-- takes up 8 out of 12 columns -->
+          <div class="col-8">// Column content goes here</div>
+          <div class="col-4">// Column content goes here</div>
+        </div>
+      </div>
+
+      <!-- the first and second columns would be equal-sized on mobile. On small devices, the first column will take up 7 columns, and the second column 5 columns. Then on medium devices 8 and 4 columns, respectively, and on extra large devices, they’ll take up 9 and 3 columns. -->
+      <div class="container">
+        <div class="row">
+          <div class="item-one col-6 col-sm-7 col-md-8 col-xl-9">
+            // Column content goes here
+          </div>
+          <div class="item-two col-6 col-sm-5 col-md-4 col-xl-3">
+            // Column content goes here
+          </div>
+        </div>
+      </div>
+
+      <!-- gap-3 sets the gap (1 to 5) -->
+      <!-- d-grid sets class as display: grid;  -->
+      <div class="d-grid gap-3">
+        <div class="p-2 bg-light border">Grid item 1</div>
+        <div class="p-2 bg-light border">Grid item 2</div>
+        <div class="p-2 bg-light border">Grid item 3</div>
+      </div>
+
+      <!-- flexbox -->
+      <div class="d-flex align-items-center justify-content-center">
+        <div class="border p-5">Centre</div>
+      </div>
+
+      <!-- footer  -->
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav border-bottom pb-3 mb-3 d-flex justify-content-center">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link px-2 text-muted">Home</a>
+            </li>
+            <li>
+              <a href="examples.html" class="nav-link px-2 text-muted"
+                >Examples</a
+              >
+            </li>
+            <li>
+              <a href="#form" class="nav-link px-2 text-muted">Contact</a>
+            </li>
+          </ul>
+          <p class="text-center text-muted">@ 2023 Ramsnes, Inc</p>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>

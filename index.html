@@ -1,10 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SASS demo</title>
     <link rel="stylesheet" href="dist/css/index.css" />
-    <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <nav>
+        <ul class="nav justify-content-center" style="font-size: 1.8rem">
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="examples.html"
+              href="#"
+              style="text-decoration: none; color: black"
+              >Examples</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="#form"
+              href="#"
+              style="text-decoration: none; color: black"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <h1>Heading one</h1>
+      <div class="container">
+        <div class="row" style="text-align: center">
+          <h1 class="my-5">Welcome to the SASS demo!</h1>
+          <div class="col-6 col-sm-7 col-md-8 col-lg-9 item-1">
+            Column 1 - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Beatae distinctio, ducimus quas explicabo est excepturi nam
+            inventore velit id omnis assumenda dicta earum perferendis quos
+            debitis totam perspiciatis optio. Sint temporibus ipsa nam molestias
+            eligendi, in laboriosam qui nisi necessitatibus debitis a
+            doloremque! Sed eaque aliquid unde beatae tenetur voluptatem.
+          </div>
+          <div class="col-6 col-sm-5 col-md-4 col-lg-3 item-2">
+            Column 2 - Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Dolores ea, beatae ullam fugiat provident laboriosam eaque quas
+            itaque fuga amet corrupti quibusdam! Hic laboriosam fuga doloremque
+            eos, quam ad excepturi!
+          </div>
+        </div>
+
+        <form
+          id="form"
+          method="get"
+          style="max-width: 500px"
+          class="mx-5 d-flex flex-column justify-content-center"
+        >
+          <div class="mt-5">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon2"
+                >Example: John Doe</span
+              >
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Full name"
+                aria-label="Full name"
+                aria-describedby="basic-addon2"
+                name="name"
+              />
+              <!-- name="#" sends the input into the url bar -->
+            </div>
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Username"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+              name="Username"
+            />
+          </div>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text">Your inquiery</span>
+            <textarea
+              class="form-control"
+              placeholder="Your enquiery here"
+              aria-label="With textarea"
+              name="Text"
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav border-bottom pb-3 mb-3 d-flex justify-content-center">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link px-2 text-muted">Home</a>
+            </li>
+            <li>
+              <a href="examples.html" class="nav-link px-2 text-muted"
+                >Examples</a
+              >
+            </li>
+            <li>
+              <a href="#form" class="nav-link px-2 text-muted">Contact</a>
+            </li>
+          </ul>
+          <p class="text-center text-muted">@ 2023 Ramsnes, Inc</p>
+        </footer>
+      </div>
+    </main>
+  </body>
 </html>

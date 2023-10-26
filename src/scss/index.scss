@@ -1,3 +1,22 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "variables";
 
-// update
+body {
+  background: $bgc01;
+}
+
+li a {
+  color: map-get($colors, thirdC);
+}
+
+h1 {
+  color: map-get($colors, primaryC);
+  text-align: map-get($textAlign, center);
+}
+
+.item-1 {
+  background: $cyan;
+}
+.item-2 {
+  background: $red;
+}
