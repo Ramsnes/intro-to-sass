@@ -1,0 +1,33 @@
+.hero-banner {
+  background-color: #e85a4f;
+  color: #fff;
+  padding: 20px;
+
+  &-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: map-get($textAlign, start);
+    text-transform: uppercase;
+  }
+
+  &-subtitle {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: map-get($textAlign, end);
+    text-transform: uppercase;
+  }
+
+  &-button {
+    background-color: #e85a4f;
+    color: #fff;
+    // border: 1px solid #e85a4f;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  &-button:hover {
+    background-color: #e6776f;
+  }
+}

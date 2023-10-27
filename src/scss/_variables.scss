@@ -20,8 +20,8 @@ $grid-breakpoints: (
   lg: 992px,
   xl: 1200px,
   xxl: 1400px,
-) !default;
-// scss-docs-end grid-breakpoints
+);
+// end
 
 // Maps
 $colors: (
@@ -29,12 +29,12 @@ $colors: (
   "secondaryC": #198754,
   "thirdC": #bd1f6e,
 );
-// End maps
+// end
 
-// text
+// text align
 $textAlign: (
   "center": center,
   "start": start,
   "end": end,
 );
-// text
+// end
